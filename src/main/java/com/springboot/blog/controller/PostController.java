@@ -8,8 +8,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
 @RequestMapping("/api/posts")
 public class PostController {
@@ -58,6 +56,6 @@ public class PostController {
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deletePost(@PathVariable(name = "id") long id){
         postService.deletePostById(id);
-        return new ResponseEntity<>("Post Entity Deleted Sucessfully !!!", HttpStatus.OK);
+        return new ResponseEntity<>("Post Entity Deleted Successfully !!!", HttpStatus.OK);
     }
 }

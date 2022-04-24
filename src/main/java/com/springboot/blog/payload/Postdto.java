@@ -8,4 +8,6 @@ public class Postdto {
     private String title;
     private String description;
     private String content;
+//    private String created_by;
+//    private OffsetDateTime updated_at;
 }
